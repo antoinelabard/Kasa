@@ -18,7 +18,7 @@ function Home() {
         <section className="homeCardsList">
           <ul>
             {homes.map((home) => (
-              <li>
+              <li key={home.id}>
                 <HomeCard home={home} />
               </li>
             ))}
