@@ -1,0 +1,51 @@
+@import "../../utils/utils.scss";
+
+main {
+  margin: 5%;
+
+  @include desktop-display {
+    margin: 0 100px 100px 100px;
+  }
+}
+
+.cover {
+  border-radius: 25px;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    filter: brightness(60%);
+    border-radius: 25px;
+    z-index: -1;
+  }
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.homeCardsList {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+}
