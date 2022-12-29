@@ -1,3 +1,5 @@
+@import "../../utils/utils.scss";
+
 header {
   display: flex;
   flex-direction: row;
@@ -5,6 +7,15 @@ header {
   align-items: center;
   height: 68px;
   margin-bottom: 20px;
+
+  @include desktop-display {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+h1 {
+  text-align: center;
 }
 
 .navLink {
