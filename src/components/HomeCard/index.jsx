@@ -1,4 +1,5 @@
 import './index.scss'
+import PropTypes from 'prop-types'
 
 function HomeCard({home}) {
     return (
@@ -7,6 +8,10 @@ function HomeCard({home}) {
             <p>{home.title}</p>
         </div>
     )
+}
+
+HomeCard.propTypes = {
+    home: PropTypes.object
 }
 
 export default HomeCard
