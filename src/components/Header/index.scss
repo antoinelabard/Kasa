@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  margin-bottom: 20px;
+}
+
+.navLink {
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  color: #ff6060;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
