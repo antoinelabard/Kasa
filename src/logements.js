@@ -1,4 +1,4 @@
-let housings = [
+let homes = [
 	{
 		"id": "c67ab8a7",
 		"title": "Appartement cosy",
@@ -618,4 +618,4 @@ let housings = [
 	}
 ]
 
-export default housings
+export default homes
