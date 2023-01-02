@@ -1,0 +1,38 @@
+@import "../../utils/utils.scss";
+
+.carousel {
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+
+    @include desktop-display {
+        border-radius: 25px;
+    }
+  }
+
+  button {
+    all: initial;
+    position: absolute;
+    height: 100%;
+    width: 80px;
+
+    img {
+      height: 20px;
+
+      @include desktop-display {
+        height: 80px;
+    }
+    }
+  }
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}
