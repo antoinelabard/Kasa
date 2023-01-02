@@ -1,0 +1,75 @@
+@import "../../utils/utils.scss";
+
+.housing-info {
+  display: flex;
+  flex-direction: column;
+
+  &__general {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ff6060;
+
+    h1,
+    h2 {
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @include desktop-display {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+
+    &__host {
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+.housing-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @include desktop-display {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .collapseContainer {
+        width: 48%;
+    }
+  }
+}
