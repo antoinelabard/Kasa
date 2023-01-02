@@ -2,11 +2,11 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import homeCover from "../../assets/home_cover.jpg"
 import HomeCard from "../../components/HomeCard"
+import Repository from "../../data/Repository"
 import "./index.scss"
 
-import homes from "../../logements.js"
-
 function Home() {
+  const homes = new Repository().getHousings()
   return (
     <div>
       <Header />
