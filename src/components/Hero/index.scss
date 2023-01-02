@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+
+    p {
+        color: #FF6060;
+        font-weight: 500;
+        width: 90px;
+        word-wrap: break-word;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
+        object-fit: fill;
+        border-radius: 64px;
+    }
+}
