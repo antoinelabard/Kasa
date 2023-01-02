@@ -1,0 +1,23 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  a {
+    all: initial;
+    text-decoration: underline;
+    color: #ff6060;
+  }
+}
