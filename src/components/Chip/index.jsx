@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
+import "./index.scss"
 
-function Chip() {
-  return (
-  )
+function Chip({ text }) {
+  return <p className="chip">{text}</p>
 }
 
 export default Chip
