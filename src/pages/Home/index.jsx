@@ -11,7 +11,7 @@ function Home() {
     <div>
       <Header />
       <main>
-        <div className="cover">
+        <div className="home-cover">
           <h1>Chez vous, partout et ailleurs</h1>
           <img src={homeCover} alt="home background cover" />
         </div>

@@ -9,7 +9,7 @@ function About() {
     <div>
       <Header />
       <main>
-        <div className="cover">
+        <div className="about-cover">
           <img src={aboutCover} alt="about page cover" />
         </div>
         <section>
