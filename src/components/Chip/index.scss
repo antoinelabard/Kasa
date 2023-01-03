@@ -4,11 +4,17 @@
   background-color: $primary-color;
   color: white;
   width: fit-content;
-  height: 25px;
+  height: 18px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   margin: 5px;
+  font-size: 10px;
+
+  @include desktop-display {
+    height: 25px;
+    font-size: 14px;
+  }
 }

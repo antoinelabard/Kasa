@@ -25,7 +25,7 @@ function Housing() {
           <div className="housing-info__general">
             <h1>{housing.title}</h1>
             <h2>{housing.location}</h2>
-            <div>
+            <div className="tags">
               {housing.tags.map((tag) => (
                 <Chip text={tag} />
               ))}

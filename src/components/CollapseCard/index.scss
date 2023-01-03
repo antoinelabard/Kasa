@@ -19,11 +19,22 @@
     h2 {
       color: white;
       margin: 0;
+      font-size: 13px;
     }
 
     img {
-      width: 23px;
+      height: 8px;
       height: min-content;
+    }
+
+    @include desktop-display {
+      h2 {
+        font-size: 18px;
+      }
+
+      img {
+        height: 16px;
+      }
     }
   }
 
@@ -31,5 +42,11 @@
     color: $primary-color;
     background-color: $grey-color;
     padding: 30px;
+
+    @include desktop-display {
+      p {
+        font-size: 18px;
+      }
+    }
   }
 }

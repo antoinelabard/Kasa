@@ -25,7 +25,7 @@
       font-size: 14px;
     }
 
-    div {
+    .tags {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin-top: 30px;
 
   @include desktop-display {
     flex-direction: row;
