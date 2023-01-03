@@ -1,44 +1,44 @@
 @import "../../utils/style.scss";
 
-main {
-  margin: 5%;
-
-  @include desktop-display {
-    margin: 0 100px 100px 100px;
-
-    section {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-  }
-
-  .about-cover {
-    height: 220px;
-    img {
-      border-radius: 25px;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      object-fit: fill;
-      border-radius: 25px;
-    }
-  }
-
-}
-
-ul {
-  padding: 0;
+.about-cover {
   width: 100%;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  height: 220px;
+
+  img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 25px;
+  }
 }
-.homeCardsList {
-  background-color: #f7f7f7;
-  border-radius: 25px;
+
+.collapse-cards {
+  margin-top: 20px;
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+@include desktop-display {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 35px;
+  }
+
+  .collapse-cards {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+  }
 }
