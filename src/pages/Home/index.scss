@@ -44,6 +44,9 @@
   }
 }
 
+.housing-cards-list {
+  border-radius: 25px;
+
 ul {
   padding: 0;
   margin: 0;
@@ -62,14 +65,11 @@ ul {
     padding: 25px;
 
     li {
-      width: auto;
+      width: min-content;
+      margin: 0;
     }
   }
 }
-
-.homeCardsList {
-  border-radius: 25px;
-
   @include desktop-display {
     background-color: $grey-color;
     padding: 20px;

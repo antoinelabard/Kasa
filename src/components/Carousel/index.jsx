@@ -23,11 +23,11 @@ function Carousel({ housing }) {
           <img
             src={carouselArrow}
             alt="carousel arrow"
-            style={{ transform: "rotate(180deg)" }}
           />
         </button>
       )}
       <img
+      className="carousel-picture"
         src={housing.pictures[pictureIndex]}
         alt={`${housing.title} - ${pictureIndex}`}
       />

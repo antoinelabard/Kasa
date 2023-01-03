@@ -19,6 +19,7 @@
 
     h1 {
       font-size: 18px;
+      text-align: left;
     }
 
     h2 {
@@ -48,6 +49,7 @@
     &__host {
       flex-direction: column;
       justify-content: center;
+      align-items: flex-end;
     }
     h1 {
       font-size: 36px;
