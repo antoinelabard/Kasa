@@ -26,8 +26,8 @@ function Housing() {
             <h1>{housing.title}</h1>
             <h2>{housing.location}</h2>
             <div className="tags">
-              {housing.tags.map((tag) => (
-                <Chip text={tag} />
+              {housing.tags.map((tag, index) => (
+                <Chip key={`${tag}-${index}`} text={tag} />
               ))}
             </div>
           </div>
@@ -42,8 +42,8 @@ function Housing() {
             title="Équipements"
             description={
               <ul>
-                {housing.equipments.map((equipment) => (
-                  <li>{equipment}</li>
+                {housing.equipments.map((equipment, index) => (
+                  <li key={`${equipment}-${index}`}>{equipment}</li>
                 ))}
               </ul>
             }

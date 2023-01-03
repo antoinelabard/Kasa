@@ -6,8 +6,9 @@ function Rating({ rating }) {
   const baseRating = [1, 2, 3, 4, 5]
   return (
     <div className="rating">
-      {baseRating.map((r) => (
+      {baseRating.map((r, index) => (
         <img
+          key={`${r}-${index}`}
           src={r <= rating ? starActive : starInactive}
           alt="rating star"
         />
