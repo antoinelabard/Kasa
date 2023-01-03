@@ -1,12 +1,12 @@
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import homeCover from "../../assets/home_cover.jpg"
-import HomeCard from "../../components/HomeCard"
+import HousingCard from "../../components/HousingCard"
 import Repository from "../../data/Repository"
 import "./index.scss"
 
 function Home() {
-  const homes = new Repository().getHousings()
+  const housings = new Repository().getHousings()
   return (
     <div>
       <Header />
@@ -15,11 +15,11 @@ function Home() {
           <h1>Chez vous, partout et ailleurs</h1>
           <img src={homeCover} alt="home background cover" />
         </div>
-        <section className="homeCardsList">
+        <section className="housing-cards-list">
           <ul>
-            {homes.map((home) => (
-              <li key={home.id}>
-                <HomeCard home={home} />
+            {housings.map((housing) => (
+              <li key={housing.id}>
+                <HousingCard housing={housing} />
               </li>
             ))}
           </ul>
