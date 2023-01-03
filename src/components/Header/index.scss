@@ -5,12 +5,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 68px;
+  height: 47px;
   margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include desktop-display {
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 40px;
+    height: 68px;
   }
 }
 
@@ -24,6 +29,7 @@ h1 {
   padding: 10px;
   color: #ff6060;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     text-decoration: underline;

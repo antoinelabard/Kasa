@@ -1,7 +1,7 @@
 @import "../../utils/utils.scss";
 
 main {
-  margin: 5%;
+  margin: 20px;
 
   @include desktop-display {
     margin: 0 100px 100px 100px;
@@ -11,14 +11,21 @@ main {
 .home-cover {
   border-radius: 25px;
   width: 100%;
-  height: 150px;
+  height: 110px;
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 45px;
+  padding: 16px;
+  box-sizing: border-box;
 
   h1 {
     color: white;
+    font-size: 24px;
+    width: 100%;
+    text-align: left;
   }
 
   img {
@@ -34,18 +41,45 @@ main {
     border-radius: 25px;
     z-index: -1;
   }
+
+  @include desktop-display {
+    height: 225px;
+    justify-content: flex-start;
+    h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+  }
 }
 
 ul {
   padding: 0;
+  margin: 0;
   width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  li {
+    width: 100%;
+  }
+
+  @include desktop-display {
+    padding: 25px;
+
+    li {
+      width: auto;
+    }
+  }
 }
+
 .homeCardsList {
-  background-color: #f7f7f7;
   border-radius: 25px;
+
+  @include desktop-display {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
 }
