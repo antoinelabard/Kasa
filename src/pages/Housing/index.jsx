@@ -40,7 +40,13 @@ function Housing() {
           <CollapseCard title="Description" description={housing.description} />
           <CollapseCard
             title="Équipements"
-            description={housing.equipments.join("\n")}
+            description={
+              <ul>
+                {housing.equipments.map((equipment) => (
+                  <li>{equipment}</li>
+                ))}
+              </ul>
+            }
           />
         </section>
       </main>
