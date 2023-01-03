@@ -1,12 +1,4 @@
-@import "../../utils/utils.scss";
-
-main {
-  margin: 20px;
-
-  @include desktop-display {
-    margin: 0 100px 100px 100px;
-  }
-}
+@import "../../utils/style.scss";
 
 .home-cover {
   border-radius: 25px;
@@ -79,7 +71,7 @@ ul {
   border-radius: 25px;
 
   @include desktop-display {
-    background-color: #f7f7f7;
+    background-color: $grey-color;
     padding: 20px;
   }
 }

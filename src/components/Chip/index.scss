@@ -1,5 +1,7 @@
+@import "../../utils/style.scss";
+
 .chip {
-  background-color: #ff6060;
+  background-color: $primary-color;
   color: white;
   width: fit-content;
   height: 25px;

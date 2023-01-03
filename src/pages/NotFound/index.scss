@@ -1,8 +1,10 @@
+@import "../../utils/style.scss";
+
 .notFound {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ff6060;
+  color: $primary-color;
 
   h1 {
     font-size: 288px;
@@ -18,6 +20,6 @@
   a {
     all: initial;
     text-decoration: underline;
-    color: #ff6060;
+    color: $primary-color;
   }
 }

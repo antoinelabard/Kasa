@@ -1,3 +1,5 @@
+@import "../../utils/style.scss";
+
 .collapseContainer {
     width: 100%;
     margin-top: 20px;
@@ -5,7 +7,7 @@
 
     button {
         all: initial;
-        background-color: #FF6060;
+        background-color: $primary-color;
         width: 100%;
         padding: 8px;
         box-sizing: border-box;
@@ -27,7 +29,7 @@
     }
 
     section {
-        color: #FF6060;
+        color: $primary-color;
         background-color: #F6F6F6;
         padding: 30px;
     }

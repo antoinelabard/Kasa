@@ -1,0 +1,23 @@
+$primary-color: #FF6060;
+$grey-color: #f7f7f7;
+
+@mixin desktop-display {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+main {
+    margin: 20px;
+  
+    @include desktop-display {
+      margin: 0 100px 100px 100px;
+    }
+  }  
+
+  ul {
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+  }
+  

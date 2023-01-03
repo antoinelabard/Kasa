@@ -1,4 +1,4 @@
-@import "../../utils/utils.scss";
+@import "../../utils/style.scss";
 
 header {
   display: flex;
@@ -27,7 +27,7 @@ h1 {
   text-align: center;
   height: 100%;
   padding: 10px;
-  color: #ff6060;
+  color: $primary-color;
   text-decoration: none;
   text-transform: uppercase;
 

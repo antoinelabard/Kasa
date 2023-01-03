@@ -1,4 +1,4 @@
-@import "../../utils/utils.scss";
+@import "../../utils/style.scss";
 
 .housing-info {
   display: flex;
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: #ff6060;
+    color: $primary-color;
 
     h1,
     h2 {
