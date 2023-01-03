@@ -1,32 +1,31 @@
 @font-face {
-    font-family: montserrat;
-    src: url("../assets/Montserrat-VariableFont_wght.ttf");
-  }
-  
-  * {
-    font-family: montserrat;
-  }
+  font-family: montserrat;
+  src: url("../assets/Montserrat-VariableFont_wght.ttf");
+}
 
-$primary-color: #FF6060;
+* {
+  font-family: montserrat;
+}
+
+$primary-color: #ff6060;
 $grey-color: #f7f7f7;
 
 @mixin desktop-display {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 main {
-    margin: 20px;
-  
-    @include desktop-display {
-      margin: 0 100px 50px 100px;
-    }
-  }  
+  margin: 20px;
 
-  ul {
-    padding: 0;
-    width: 100%;
-    list-style-type: none;
+  @include desktop-display {
+    margin: 0 100px 50px 100px;
   }
-  
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
