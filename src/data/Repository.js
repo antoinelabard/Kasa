@@ -1,4 +1,4 @@
-import housings from "../logements"
+import housings from "./logements"
 
 class Repository {
     getHousings() {
