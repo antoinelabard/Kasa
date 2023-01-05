@@ -47,30 +47,30 @@
 .housing-cards-list {
   border-radius: 25px;
 
-ul {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-
-  li {
+  ul {
+    padding: 0;
+    margin: 0;
     width: 100%;
-  }
-
-  @include desktop-display {
-    padding: 25px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
 
     li {
-      width: min-content;
-      margin: 0;
+      width: 100%;
+    }
+
+    @include desktop-display {
+      padding: 25px;
+
+      li {
+        width: min-content;
+        margin: 0;
+      }
     }
   }
-}
   @include desktop-display {
     background-color: $grey-color;
     padding: 20px;

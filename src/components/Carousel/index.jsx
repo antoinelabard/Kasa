@@ -8,7 +8,8 @@ function Carousel({ housing }) {
   return (
     <div className="carousel">
       {picsLength > 1 && (
-        <button className="left"
+        <button
+          className="left"
           onClick={() =>
             setPictureIndex((pictureIndex + picsLength - 1) % picsLength)
           }
@@ -17,17 +18,15 @@ function Carousel({ housing }) {
         </button>
       )}
       {picsLength > 1 && (
-        <button className="right"
+        <button
+          className="right"
           onClick={() => setPictureIndex((pictureIndex + 1) % picsLength)}
         >
-          <img
-            src={carouselArrow}
-            alt="carousel arrow"
-          />
+          <img src={carouselArrow} alt="carousel arrow" />
         </button>
       )}
       <img
-      className="carousel-picture"
+        className="carousel-picture"
         src={housing.pictures[pictureIndex]}
         alt={`${housing.title} - ${pictureIndex}`}
       />

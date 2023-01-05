@@ -15,7 +15,11 @@ function CollapseCard({ title, description }) {
     <div className="collapseContainer">
       <button onClick={() => setCollapse(!isCollapsed)}>
         <h2>{title}</h2>
-        <CollapseArrowStyle isCollapsed='true' src={collapseArrow} alt="Collapse arrow" />
+        <CollapseArrowStyle
+          isCollapsed="true"
+          src={collapseArrow}
+          alt="Collapse arrow"
+        />
       </button>
       {!isCollapsed && <section>{description}</section>}
     </div>

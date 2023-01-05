@@ -11,10 +11,10 @@
     border-radius: 10px;
 
     @include desktop-display {
-        border-radius: 25px;
-        height: 415px;
-        margin-left: auto;
-        margin-right: auto;
+      border-radius: 25px;
+      height: 415px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -32,8 +32,8 @@
       @include desktop-display {
         width: 45px;
         margin-left: 24px;
-      margin-right: 24px;
-    }
+        margin-right: 24px;
+      }
     }
   }
 
