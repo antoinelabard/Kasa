@@ -7,9 +7,15 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  height: $footer-height;
+  box-sizing: border-box;
 
   p {
     color: white;
     margin-bottom: 0;
+  }
+
+  img {
+    height: 40px;
   }
 }

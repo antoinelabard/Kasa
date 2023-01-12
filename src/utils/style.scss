@@ -10,11 +10,17 @@
 
 $primary-color: #ff6060;
 $grey-color: #f7f7f7;
+$footer-height: 210px;
 
 @mixin desktop-display {
   @media screen and (min-width: 768px) {
     @content;
   }
+}
+
+.wrapper {
+  min-height: calc(100vh - $footer-height);
+  box-sizing: border-box;
 }
 
 main {
